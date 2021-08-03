@@ -15,3 +15,75 @@ h1{
 h2{
   font-weight: bold;
 }
+
+/***** HEADER *****/
+
+.header{
+  display: flex;
+  justify-content: center;
+  box-shadow: 0px 0 5px gray;
+}
+
+/**** POSITION  ****/
+
+.section1{
+  background-color: #f6f6f6;
+}
+.position{
+  background-color:#eaeaea;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.position p {
+  padding-left: 10px ;
+  font-weight: bold;
+}
+
+.info{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.info1{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.info1 h2 {
+  margin-bottom: 0;
+}
+.btn{
+  color: white;
+  padding: 0px 20px;
+  height: 50px;
+  border: none;
+  border-radius: 25px 25px ;
+  background: linear-gradient(to bottom right,#FF79DA, #9356DC);
+  margin-bottom: 50px;
+  box-shadow: 0px 5px 5px rgb(208, 208, 208) ;
+}
+
+
+
+
+
+
+
+
+
+/******** PHONE ********/
+
+@media screen and (max-width:490px) {
+  .info1{
+    width: 280px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+}
