@@ -7,6 +7,7 @@ body{
   margin: 0;
   padding: 0;
   font-family: roboto, sans-serif, cursive;
+
 }
 
 h1{
@@ -18,14 +19,16 @@ h2{
   font-weight: bold;
 }
 
-
+h5{
+  margin: 0px;
+}
 /***** HEADER *****/
 
 
 .header{
   display: flex;
   justify-content: center;
-  box-shadow: 0px 0 5px gray;
+  box-shadow: 0px 5px 10px lightgray;
 }
 
 
@@ -40,6 +43,7 @@ h2{
   display: flex;
   align-items: center;
   justify-content: center;
+  margin-top: 5px;
 }
 
 .position p {
@@ -67,11 +71,17 @@ h2{
   color: white;
   padding: 0px 20px;
   height: 50px;
+  font-size: 14px;
+  font-weight: bold;
   border: none;
   border-radius: 25px 25px ;
   background: linear-gradient(to bottom right,#FF79DA, #9356DC);
   margin-bottom: 50px;
   box-shadow: 0px 5px 5px rgb(208, 208, 208) ;
+}
+
+.btn:hover{
+
 }
 
 
@@ -80,6 +90,7 @@ h2{
 
 .section2{
   margin: 20px;
+  padding-top:15px;
 }
 
 .fonc1{
@@ -91,7 +102,7 @@ h2{
 .fonc{
   display: flex;
   flex-direction: row;
-  box-shadow: 0px 4px 5px rgb(208, 208, 208) ;
+  box-shadow: 0px 0px 15px rgb(208, 208, 208) ;
   background-color: #f6f6f6;
   border-radius: 20px;
   width: 280px ;
@@ -103,6 +114,7 @@ h2{
 
 .fonc:hover{
   background-color: #f5edff;
+  cursor: pointer;
 }
 
 .fonc:hover > .icon{
@@ -137,6 +149,78 @@ h2{
 .fonc h4{
   margin-left: 15px;
 }
+
+/***** RESTAURANTS ******/
+
+.section3{
+  margin: 50px 0px;
+  background-color: #f6f6f6;
+  padding: 30px 20px 20px 20px;
+}
+
+.resto{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.resto1{
+  display: flex;
+  border-radius: 15px ;
+  flex-direction: column;
+  background-color: #fff;
+  height: 230px;
+  width: 280px;
+  box-shadow: 0px 0px 15px #dbdbdb;
+  margin-bottom: 15px;
+  position: relative;
+}
+
+.resto_img{
+  height: 160px;
+  object-fit: cover;
+  margin-bottom: 10px;
+  border-radius: 15px 15px 0px 0px;
+}
+
+.resto_txt{
+  display: flex;
+  padding: 0px 10px;
+  justify-content: space-between;
+}
+.resto_txt h4, .resto_txt p {
+  margin: 0px 0px 5px 0px;
+}
+
+.icon1{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-right: 10px;
+}
+
+.new{
+  border-radius: 2px;
+  box-shadow: 0px 0px 5px gray;
+  background-color: #99E2D0;
+  left: 195px;
+  top: 13px;
+  color:hsl(165, 56%, 40%) ;
+  position: absolute;
+  height: 20px;
+  padding: 3px 10Px;
+}
+
+
+
+
+
+
+
+
+
+
+
 
 
 
