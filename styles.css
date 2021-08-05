@@ -22,6 +22,10 @@ h2{
 h5{
   margin: 0px;
 }
+
+.padding{
+  padding-right: 10px;
+}
 /***** HEADER *****/
 
 
@@ -80,9 +84,9 @@ h5{
   box-shadow: 0px 5px 5px rgb(208, 208, 208) ;
 }
 
-.btn:hover{
+/* .btn:hover{
 
-}
+} */
 
 
 /**** FONCTIONNEMENT *****/
@@ -105,7 +109,7 @@ h5{
   box-shadow: 0px 0px 15px rgb(208, 208, 208) ;
   background-color: #f6f6f6;
   border-radius: 20px;
-  width: 280px ;
+  width: 100% ;
   align-items: center;
   position: relative;
   margin-left: 10px;
@@ -153,9 +157,9 @@ h5{
 /***** RESTAURANTS ******/
 
 .section3{
-  margin: 50px 0px;
+  margin: 50px 0px 0px 0px;
   background-color: #f6f6f6;
-  padding: 30px 20px 20px 20px;
+  padding: 30px 20px 40px 20px;
 }
 
 .resto{
@@ -174,6 +178,7 @@ h5{
   box-shadow: 0px 0px 15px #dbdbdb;
   margin-bottom: 15px;
   position: relative;
+  cursor: pointer;
 }
 
 .resto_img{
@@ -212,13 +217,33 @@ h5{
 }
 
 
+/**** FOOTER ****/
 
+.footer{
+  background-color: #353535;
+  color: white;
+  padding:30px 20px ;
+  display: flex;
+  flex-direction: column;
+}
 
+.footer h2{
+  font-family: Shrikhand, sans-serif ;
+  font-weight: 400;
+  margin: 0px;
+  padding-top: 10px;
+}
 
+.foot_link{
+  display: flex;
+  flex-direction: column;
+}
 
-
-
-
+.foot_link a {
+  padding-top: 10px;
+  text-decoration: none;
+  color: white;
+}
 
 
 
@@ -237,5 +262,9 @@ h5{
     align-items: center;
     justify-content: center;
     text-align: center;
+  }
+
+  .resto1{
+    width: 100%;
   }
 }
