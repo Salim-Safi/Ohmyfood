@@ -71,6 +71,7 @@ h5{
 .info1 h2 {
   margin-bottom: 0;
 }
+
 .btn{
   color: white;
   padding: 0px 20px;
@@ -82,6 +83,7 @@ h5{
   background: linear-gradient(to bottom right,#FF79DA, #9356DC);
   margin-bottom: 50px;
   box-shadow: 0px 5px 5px rgb(208, 208, 208) ;
+  cursor: pointer;
 }
 
 /* .btn:hover{
@@ -98,27 +100,38 @@ h5{
 }
 
 .fonc1{
-  height: 230px;
+  height: auto;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   justify-content: space-between;
 }
 .fonc{
   display: flex;
   flex-direction: row;
-  box-shadow: 0px 0px 15px rgb(208, 208, 208) ;
+  box-shadow: 0px 4px 10px rgb(208, 208, 208) ;
   background-color: #f6f6f6;
   border-radius: 20px;
-  width: 100% ;
+  width: 31%;
   align-items: center;
   position: relative;
   margin-left: 10px;
+  cursor: pointer;
 
+}
+
+@media screen and (max-width:990px) {
+  .fonc1 {
+    flex-direction: column;
+  }
+
+  .fonc{
+    width: 100%;
+    margin-bottom: 20px;
+  }
 }
 
 .fonc:hover{
   background-color: #f5edff;
-  cursor: pointer;
 }
 
 .fonc:hover > .icon{
@@ -157,7 +170,7 @@ h5{
 /***** RESTAURANTS ******/
 
 .section3{
-  margin: 50px 0px 0px 0px;
+  margin: 40px 0px 0px 0px;
   background-color: #f6f6f6;
   padding: 30px 20px 40px 20px;
 }
@@ -168,6 +181,7 @@ h5{
   justify-content: space-between;
 }
 
+
 .resto1{
   display: flex;
   border-radius: 15px ;
@@ -176,16 +190,18 @@ h5{
   height: 230px;
   width: 280px;
   box-shadow: 0px 0px 15px #dbdbdb;
-  margin-bottom: 15px;
+  margin-bottom: 20px;
   position: relative;
-  cursor: pointer;
 }
+
 
 .resto_img{
   height: 160px;
   object-fit: cover;
+  width: 100%;
   margin-bottom: 10px;
   border-radius: 15px 15px 0px 0px;
+  cursor: pointer;
 }
 
 .resto_txt{
@@ -202,13 +218,14 @@ h5{
   justify-content: center;
   align-items: center;
   padding-right: 10px;
+  transform: scale(1.5);
 }
 
 .new{
   border-radius: 2px;
   box-shadow: 0px 0px 5px gray;
   background-color: #99E2D0;
-  left: 80%;
+  right: 15px;
   top: 13px;
   color:hsl(165, 56%, 40%) ;
   position: absolute;
@@ -231,7 +248,6 @@ h5{
   font-family: Shrikhand, sans-serif ;
   font-weight: 400;
   margin: 0px;
-  padding-top: 10px;
 }
 
 .foot_link{
@@ -246,16 +262,25 @@ h5{
 }
 
 
+/***** LAPTOP *****/
 
+@media screen and (min-width: 1165px) {
+  .resto1{
+    width: 24%;
+  }
+}
 
+/***** TABLET *****/
 
-
-
-
+@media screen and (max-width:1165px) and (min-width: 610px) {
+  .resto1{
+    width: 49%;
+  }
+}
 
 /******** PHONE ********/
 
-@media screen and (max-width:490px) {
+@media screen and (max-width:610px) {
   .info1{
     width: 280px;
     display: flex;
