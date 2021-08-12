@@ -35,6 +35,15 @@ h5{
   box-shadow: 0px 5px 10px lightgray;
 }
 
+.arrow{
+  transform: scale(1.5);
+  position: absolute;
+  left: 20px;
+  top: 20px;
+  cursor: pointer;
+  color: #353535;
+}
+
 
 /**** POSITION  ****/
 
@@ -74,22 +83,20 @@ h5{
 
 .btn{
   color: white;
-  padding: 0px 20px;
   height: 50px;
   font-size: 14px;
   font-weight: bold;
   border: none;
   border-radius: 25px 25px ;
   background: linear-gradient(to bottom right,#FF79DA, #9356DC);
-  margin-bottom: 50px;
   box-shadow: 0px 5px 5px rgb(208, 208, 208) ;
   cursor: pointer;
 }
 
-/* .btn:hover{
-
-} */
-
+.btn_spe{
+  padding: 0px 20px;
+  margin-bottom: 50px;
+}
 
 /**** FONCTIONNEMENT *****/
 
@@ -219,7 +226,9 @@ h5{
   align-items: center;
   padding-right: 10px;
   transform: scale(1.5);
+  cursor: pointer;
 }
+
 
 .new{
   border-radius: 2px;
@@ -291,5 +300,133 @@ h5{
 
   .resto1{
     width: 100%;
+  }
+}
+
+
+
+
+
+
+/************************ Partie pages *********************/
+
+.p_img{
+  object-fit:cover;
+  width: 100%;
+  height: 350px;
+}
+
+.p_section1{
+  position: absolute;
+  width: 100%;
+}
+
+.p_section2{
+  position: relative;
+  top: 300px;
+  display: flex;
+  flex-direction: column;
+  background-color: #f6f6f6;
+  border-radius: 40px 40px 0px 0px;
+  padding: 20px 20px 40px 20px;
+}
+
+.p_titre{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.p_titre h2 {
+  font-style: italic;
+  font-size: 28px;
+  font-family: Shrikhand, sans-serif ;
+  font-weight: 600;
+}
+
+.under{
+  margin-top: 20px;
+}
+.under::after{
+  content: '';
+  display: block;
+  width: 40px;
+  height: 3px;
+  background: #99E2D0;
+}
+
+.p_contenue1{
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+}
+
+.p_contenue2{
+  display: flex;
+  justify-content: space-between;
+  background-color: #fff;
+  width: 31%;
+  border-radius: 15px;
+  padding: 10px 10px;
+  margin-top: 10px;
+  box-shadow: 0px 0px 15px #dbdbdb;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.p_contenue2 h3, .p_contenue2 p {
+  margin: 0;
+  padding-bottom: 5px;
+}
+
+.over_ellip{
+  text-overflow: ellipsis;
+}
+
+.prix{
+  display: flex;
+  font-weight: bold;
+  align-items: flex-end;
+}
+
+.btn1{
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+}
+
+.btn_spe1{
+  padding: 0px 45px;
+  margin-bottom: 20px;
+}
+
+.relative{
+  position: relative;
+  top:295px;
+}
+
+
+@media screen and (max-width:1000px) {
+  .p_img{
+    height:250px;
+  }
+
+  .p_section2{
+    top: 200px;
+  }
+
+  .relative{
+    top: 200px;
+  }
+
+  .p_contenue1{
+    flex-direction: column;
+  }
+
+  .p_contenue2{
+    width: 95%;
+    overflow: hidden;
   }
 }
