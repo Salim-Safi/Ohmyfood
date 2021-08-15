@@ -93,6 +93,11 @@ h5{
   cursor: pointer;
 }
 
+.btn:hover{
+  transform: translateY(10px);
+  transition: 350ms 0ms ease-out
+}
+
 .btn_spe{
   padding: 0px 20px;
   margin-bottom: 50px;
@@ -196,11 +201,16 @@ h5{
   background-color: #fff;
   height: 230px;
   width: 280px;
-  box-shadow: 0px 0px 15px #dbdbdb;
+  box-shadow: 0px 0px 15px #aaa8a8;
   margin-bottom: 20px;
   position: relative;
 }
 
+.resto1:hover{
+  transform: scale(1.01);
+  box-shadow: 0px 0px 15px #6b6b6b;
+  transition: 350ms 0ms ease-out;
+}
 
 .resto_img{
   height: 160px;
@@ -220,16 +230,8 @@ h5{
   margin: 0px 0px 5px 0px;
 }
 
-.icon1{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding-right: 10px;
-  transform: scale(1.5);
-  cursor: pointer;
-}
-
 .icon2{
+  display: flex;
   width: 28px;
 }
 
@@ -241,8 +243,9 @@ h5{
 }
 
 .icon2:hover path{
-  fill:blue;
-  stroke: blue;
+  transition: 300ms 0ms ease-in-out;
+  fill:url(#my-cool-gradient) #FF79DA;
+  stroke: transparent;
 }
 
 .new{
@@ -285,6 +288,9 @@ h5{
   color: white;
 }
 
+.foot_link a:hover{
+  text-decoration: underline;
+}
 
 /***** LAPTOP *****/
 
@@ -371,42 +377,90 @@ h5{
   background: #99E2D0;
 }
 
+.p_menu{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.p_contenue{
+  width: 31%;
+}
+
 .p_contenue1{
 display: flex;
-flex-direction: row;
+flex-direction: column;
 justify-content: space-between;
 }
 
 .p_contenue2{
   display: flex;
-  justify-content: space-between;
   background-color: #fff;
-  width: 31%;
+  width: 100%;
   border-radius: 15px;
-  padding: 10px 10px;
   margin-top: 10px;
   box-shadow: 0px 0px 15px #dbdbdb;
   cursor: pointer;
   animation: slideDown 1.5s ease-in-out;
+  overflow: hidden;
 }
 
-.p_contenue2 h3, .p_contenue2 p {
+.p_contenue2  h3, .p_contenue2 p {
   margin: 0;
-  padding-bottom: 5px;
+  padding: 5px 5px 5px 10px;
 }
 
 .p_text{
-  border: #99E2D0 solid;
+  flex: 1;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
-  display: inline-block;
+}
+
+.p_text h3{
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+.p_text p{
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+.anim_hover{
+  position: relative;
+  height: auto;
+  width: 55px;
+  background-color: #99E2D0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 0px 15px 15px 0 ;
+  margin-right: -55px;
+  margin-left: 10px;
+  transition-duration: 0.7s;
+}
+
+.p_contenue2:hover .anim_hover{
+  margin-right: 0px;
+}
+
+.p_contenue2:hover i{
+  transform: rotate(1turn);
+  transition: 450ms 200ms ease-out;
+}
+
+.fa-check-circle{
+  color: white;
 }
 
 .prix{
   display: flex;
   font-weight: bold;
   align-items: flex-end;
+  padding-right: 20px;
 }
 
 .btn1{
@@ -426,7 +480,7 @@ justify-content: space-between;
 }
 
 
-@media screen and (max-width:1000px) {
+@media screen and (max-width:900px) {
   .p_img{
     height:250px;
   }
@@ -439,12 +493,12 @@ justify-content: space-between;
     top: 200px;
   }
 
-  .p_contenue1{
+  .p_menu{
     flex-direction: column;
   }
 
-  .p_contenue2{
-    width:calc(95%);
+  .p_contenue1, .p_contenue{
+    width: 100%;
   }
 }
 
@@ -466,7 +520,7 @@ justify-content: space-between;
 }
 
 .d1{
-  animation-delay: 0;
+  animation-delay: 0s;
 }
 
 .d2{
