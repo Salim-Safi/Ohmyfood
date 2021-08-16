@@ -1,16 +1,52 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="en">
 <head>
+
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ohmyfood</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
+
 </head>
+
 <body>
 
+
+            <!-- LOADER -->
+
+
+    <div class="s_loader hidden">
+
+        <div class="loader">
+            <span style="--i:1;"></span>
+            <span style="--i:2;"></span>
+            <span style="--i:3;"></span>
+            <span style="--i:4;"></span>
+            <span style="--i:5;"></span>
+            <span style="--i:6;"></span>
+            <span style="--i:7;"></span>
+        </div>
+        <svg>
+            <filter id="gooey">
+                <feGaussianBlur in="SourceGraphic" stdDeviation="10" />
+                <feColorMatrix values="
+                1 0 0 0 0
+                0 1 0 0 0
+                0 0 1 0 0
+                0 0 0 20 -10
+                "/>
+            </filter>
+        </svg>
+
+        <p class="loader_p">Ohmyfood</p>
+
+    </div>
+
+
             <!-- HEADER -->
+
 
     <header class="header">
 
@@ -20,7 +56,9 @@
 
     </header>
 
+
             <!-- INFO ET H1 -->
+
 
     <section class="section1">
 
@@ -118,11 +156,7 @@
                         <h4>La note enchantée</h4>
                         <p>Charonne</p>
                     </div>
-                    <div class="icon2"><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="heart" class="svg-inline--fa fa-heart fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="-15 -8 550 550"><path fill="currentColor" d="M462.3 62.6C407.5 15.9 326 24.3 275.7 76.2L256 96.5l-19.7-20.3C186.1 24.3 104.5 15.9 49.7 62.6c-62.8 53.6-66.1 149.8-9.9 207.9l193.5 199.8c12.5 12.9 32.8 12.9 45.3 0l193.5-199.8c56.3-58.1 53-154.3-9.8-207.9z"></path><linearGradient id="my-cool-gradient" x2="1" y2="1">
-                        <stop offset="0%" stop-color="#FF79DA" />
-                        <stop offset="80%" stop-color="#9356DC" />
-                        <stop offset="100%" stop-color="#9356DC" />
-                        </linearGradient></svg></div>
+                    <div class="icon2"><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="heart" class="svg-inline--fa fa-heart fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="-15 -8 550 550"><path fill="currentColor" d="M462.3 62.6C407.5 15.9 326 24.3 275.7 76.2L256 96.5l-19.7-20.3C186.1 24.3 104.5 15.9 49.7 62.6c-62.8 53.6-66.1 149.8-9.9 207.9l193.5 199.8c12.5 12.9 32.8 12.9 45.3 0l193.5-199.8c56.3-58.1 53-154.3-9.8-207.9z"></path></svg></div>
                 </div>
             </div>
 
@@ -135,11 +169,7 @@
                         <h4>À la française</h4>
                         <p>Cité Rouge</p>
                     </div>
-                    <div class="icon2"><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="heart" class="svg-inline--fa fa-heart fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="-15 -8 550 550"><path fill="currentColor" d="M462.3 62.6C407.5 15.9 326 24.3 275.7 76.2L256 96.5l-19.7-20.3C186.1 24.3 104.5 15.9 49.7 62.6c-62.8 53.6-66.1 149.8-9.9 207.9l193.5 199.8c12.5 12.9 32.8 12.9 45.3 0l193.5-199.8c56.3-58.1 53-154.3-9.8-207.9z"></path><linearGradient id="my-cool-gradient" x2="1" y2="1">
-                        <stop offset="0%" stop-color="#FF79DA" />
-                        <stop offset="80%" stop-color="#9356DC" />
-                        <stop offset="100%" stop-color="#9356DC" />
-                        </linearGradient></svg></div>
+                    <div class="icon2"><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="heart" class="svg-inline--fa fa-heart fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="-15 -8 550 550"><path fill="currentColor" d="M462.3 62.6C407.5 15.9 326 24.3 275.7 76.2L256 96.5l-19.7-20.3C186.1 24.3 104.5 15.9 49.7 62.6c-62.8 53.6-66.1 149.8-9.9 207.9l193.5 199.8c12.5 12.9 32.8 12.9 45.3 0l193.5-199.8c56.3-58.1 53-154.3-9.8-207.9z"></path></svg></div>
                 </div>
             </div>
 
@@ -150,11 +180,7 @@
                         <h4>Le délice des sens</h4>
                         <p>Folie-Méricourt</p>
                     </div>
-                    <div class="icon2"><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="heart" class="svg-inline--fa fa-heart fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="-15 -8 550 550"><path fill="currentColor" d="M462.3 62.6C407.5 15.9 326 24.3 275.7 76.2L256 96.5l-19.7-20.3C186.1 24.3 104.5 15.9 49.7 62.6c-62.8 53.6-66.1 149.8-9.9 207.9l193.5 199.8c12.5 12.9 32.8 12.9 45.3 0l193.5-199.8c56.3-58.1 53-154.3-9.8-207.9z"></path><linearGradient id="my-cool-gradient" x2="1" y2="1">
-                        <stop offset="0%" stop-color="#FF79DA" />
-                        <stop offset="80%" stop-color="#9356DC" />
-                        <stop offset="100%" stop-color="#9356DC" />
-                        </linearGradient></svg></div>
+                    <div class="icon2"><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="heart" class="svg-inline--fa fa-heart fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="-15 -8 550 550"><path fill="currentColor" d="M462.3 62.6C407.5 15.9 326 24.3 275.7 76.2L256 96.5l-19.7-20.3C186.1 24.3 104.5 15.9 49.7 62.6c-62.8 53.6-66.1 149.8-9.9 207.9l193.5 199.8c12.5 12.9 32.8 12.9 45.3 0l193.5-199.8c56.3-58.1 53-154.3-9.8-207.9z"></path></svg></div>
                 </div>
             </div>
 
@@ -175,7 +201,7 @@
             <a href="#"><i class="fas fa-utensils padding"></i> Proposer un restaurant</a>
             <a href="#"><i class="fas fa-hands-helping padding"></i>Devenir partenaire</a>
             <a href="#">Mentions légales</a> 
-            <a href="mailto:salimbeni.safi@gmail.com">Contact</a>
+            <a href="mailto:ohmyfood@gmail.com">Contact</a>
         
         </div>
 
