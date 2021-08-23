@@ -42,8 +42,8 @@
 }
 
 svg{
-  width: 25;
-  height:25;
+  width: 25px;
+  height:25px;
 }
 
 .loader{
@@ -79,6 +79,7 @@ svg{
 .loader_p{
   font-family: Shrikhand, sans-serif ;
   font-size: 30px;
+  margin-top: 150px;
   transform: translateY(-120px);
 }
 
